@@ -1,0 +1,264 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.videoWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.videoLoaded {
+  opacity: 1;
+}
+
+.bgVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlayBase,
+.overlayVignette,
+.overlayBottom,
+.overlayLeft {
+  position: absolute;
+  inset: 0;
+}
+
+.overlayBase {
+  background: rgba(8, 8, 8, 0.5);
+}
+
+.overlayVignette {
+  background: radial-gradient(ellipse at center, transparent 32%, rgba(8, 8, 8, 0.72) 100%);
+}
+
+.overlayBottom {
+  background: linear-gradient(to top, rgba(8, 8, 8, 0.98) 0%, rgba(8, 8, 8, 0.55) 44%, transparent 78%);
+}
+
+.overlayLeft {
+  background: linear-gradient(to right, rgba(8, 8, 8, 0.78) 0%, rgba(8, 8, 8, 0.36) 42%, transparent 74%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1240px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 128px 32px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 28px;
+}
+
+.kicker {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(8, 8, 8, 0.5);
+  padding: 7px 12px;
+  color: var(--text-soft);
+  font-family: var(--font-condensed);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent-red);
+  box-shadow: 0 0 10px rgba(232, 25, 44, 0.45);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 44px;
+  align-items: end;
+}
+
+.copyBlock {
+  max-width: 700px;
+}
+
+.headline {
+  margin: 0;
+  max-width: 680px;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: 0;
+  opacity: 0;
+}
+
+.lede {
+  max-width: 520px;
+  margin-top: 22px;
+  color: var(--text-soft);
+  font-size: 18px;
+  line-height: 1.55;
+  opacity: 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+  opacity: 0;
+}
+
+.primaryAction,
+.secondaryAction {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 0 18px;
+  font-family: var(--font-condensed);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.primaryAction {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--accent-red);
+  color: #fff;
+}
+
+.primaryAction:hover {
+  background: #ff2b3d;
+}
+
+.secondaryAction {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-soft);
+}
+
+.secondaryAction:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.detailBlock {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 20px;
+  color: var(--text-muted);
+  opacity: 0;
+}
+
+.detailLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-family: var(--font-condensed);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.detailBlock p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.animateKicker {
+  animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.animateHeadline {
+  animation: fadeInUp 0.7s ease 0.34s both;
+}
+
+.animateLede {
+  animation: fadeInUp 0.7s ease 0.48s both;
+}
+
+.animateActions {
+  animation: fadeInUp 0.7s ease 0.62s both;
+}
+
+.animateDetail {
+  animation: fadeInUp 0.7s ease 0.56s both;
+}
+
+.animateBottom {
+  animation: fadeInUp 0.7s ease 0.72s both;
+}
+
+@media (max-width: 980px) {
+  .content {
+    padding-top: 112px;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .headline {
+    font-size: 58px;
+  }
+
+  .detailBlock {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding: 104px 20px 28px;
+    gap: 22px;
+  }
+
+  .headline {
+    font-size: 42px;
+    line-height: 1.02;
+  }
+
+  .lede {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .actions {
+    margin-top: 22px;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    width: 100%;
+  }
+
+  .detailBlock {
+    padding-left: 14px;
+  }
+}

@@ -1,0 +1,169 @@
+.previewBox {
+  width: min(100%, 260px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  animation: slideInPreview 0.7s ease 0.9s both;
+}
+
+.thumbnailWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: #050505;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.previewBox:hover .thumbnail {
+  transform: scale(1.035);
+}
+
+.thumbnailOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(232, 25, 44, 0.12);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.overlayActive {
+  opacity: 1;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(8, 8, 8, 0.76);
+  color: var(--text-primary);
+  backdrop-filter: blur(8px);
+  transform: translate(-50%, -50%) scale(0.92);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.playActive {
+  transform: translate(-50%, -50%) scale(1);
+  background: var(--accent-red);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+}
+
+.labelDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--accent-red);
+  flex-shrink: 0;
+}
+
+.labelText {
+  font-family: var(--font-condensed);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.previewBox:hover .labelText {
+  color: var(--text-primary);
+}
+
+.labelArrow {
+  color: currentColor;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.labelArrowActive {
+  color: var(--accent-red);
+  transform: translateX(4px);
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(12px);
+  animation: modalFadeIn 0.3s ease forwards;
+}
+
+.modalInner {
+  position: relative;
+  width: min(100%, 1100px);
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 36px 90px rgba(0, 0, 0, 0.72);
+  animation: modalFadeIn 0.32s ease forwards;
+}
+
+.modalVideo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: rgba(12, 12, 12, 0.82);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.closeBtn:hover {
+  background: var(--accent-red);
+  border-color: rgba(255, 255, 255, 0.26);
+}
+
+@media (max-width: 640px) {
+  .previewBox {
+    width: 100%;
+  }
+}
