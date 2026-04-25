@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.corpsearena.app",
+      "sha256_cert_fingerprints": [
+        "C3:D8:C1:A4:BC:88:8D:51:34:D9:B4:D2:20:0A:47:8B:04:29:BF:FF:B7:A5:2C:05:A4:F1:0A:75:DF:32:27:E1",
+        "89:92:17:D4:2E:D5:3C:76:FE:97:0A:E2:86:A5:DE:56:E8:1A:CF:F7:9A:AB:20:FB:BD:A6:D4:27:D3:D0:C9:D7"
+      ]
+    }
+  }
+]
