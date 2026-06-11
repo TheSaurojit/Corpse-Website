@@ -17,7 +17,7 @@ export default function AboutPage() {
       <TeamSection />
       <BigCta
         title="JOIN THE<br/>ARENA"
-        body="Season 3 is live. Register now and compete against the best in the world."
+        body="season 1is live. Register now and compete against the best in the world."
         buttonLabel="Compete now →"
         buttonPage="compete"
       />

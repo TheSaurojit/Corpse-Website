@@ -8,7 +8,7 @@ const NAV_LINKS: { label: string; page: Page }[] = [
   { label: "Esports", page: "home" },
   { label: "Arenas", page: "compete" },
   { label: "Ladder", page: "roster" },
-  { label: "Guilds", page: "about" },
+  // { label: "Guilds", page: "about" },
 ];
 
 export default function Navbar() {
@@ -95,10 +95,10 @@ export default function Navbar() {
             />
             SERVER STATUS — ALL ARENAS NORMAL
           </span>
-          {!isTablet && <span>v2.4.1 · CORPSE.LTD</span>}
-          <span style={{ display: "flex", gap: "22px" }}>
-            <span>SHARD&nbsp;#0001 · MUMBAI</span>
-            <span>02 MAY 2026 · {timeStr}</span>
+          {!isTablet && <span>v1.0.1 · CORPSE ESPORTS PRIVATE LIMITED</span>}
+          <span style={{ display: "flex", gap: "22px", marginLeft : "-80px", }}>
+            <span>Assam · INDIA</span>
+            <span>02 JUNE 2026 · {timeStr}</span>
           </span>
         </div>
       )}
@@ -219,7 +219,8 @@ export default function Navbar() {
             gap: "16px",
           }}
         >
-          <button
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.corpsearena.app&pcampaignid=web_share"
             onClick={() => handleNavigate("compete")}
             style={{
               display: "inline-flex",
@@ -257,7 +258,7 @@ export default function Navbar() {
             >
               →
             </span>
-          </button>
+          </a>
 
           {(isMobile || isTablet) && (
             <button

@@ -111,7 +111,7 @@ export default function TopLadderPreview() {
           <b style={{ color: '#FF0000', fontWeight: 400 }}>// 03</b><br />Ladder
         </span>
         <h2 style={{ margin: 0, fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(40px, 7vw, 100px)', lineHeight: 0.92, letterSpacing: '-0.04em', textTransform: 'uppercase', color: '#fff' }}>
-          The Veterans,{' '}
+          The Players,{' '}
           <em style={{ fontStyle: 'normal', fontFamily: 'var(--font-sub)', fontWeight: 300, color: '#7E7E7E', letterSpacing: '-0.02em', textTransform: 'none' }}>
             top 5 this week.
           </em>

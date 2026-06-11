@@ -17,7 +17,7 @@ export default function CompetePage() {
       <FeaturesGrid />
 
       <EventsGrid />
-      <BracketViz />
+      {/* <BracketViz /> */}
       <Footer />
     </>
   );

@@ -54,17 +54,17 @@ export const ROSTER: RosterEntry[] = [
 ];
 
 export const EVENTS: Event[] = [
-  { id:'winter-invitational', round:'S3 · Round 08', name:'Winter Invitational — Open Bracket', time:'Live now',       slots:'104/128 slots filled', live:true },
-  { id:'pacific-regional',    round:'S3 · Round 07', name:'Pacific Regional Qualifier',          time:'Today 18:00',   slots:'41/64 slots' },
-  { id:'corps-classic',       round:'S3 · Round 06', name:'Corps Classic — All Stars',            time:'Tomorrow 14:00',slots:'18/32 slots' },
-  { id:'underground-circuit', round:'S3 · Round 05', name:'Underground Circuit Vol. 4',           time:'Fri 20:00',     slots:'87/256 slots' },
+  { id:'winter-invitational', round:'S3 · Round 08', name:'No data', time:'Live now',       slots:'104/128 slots filled', live:true },
+  { id:'pacific-regional',    round:'S3 · Round 07', name:'No data',          time:'Today 18:00',   slots:'41/64 slots' },
+  { id:'corps-classic',       round:'S3 · Round 06', name:'No data',            time:'Tomorrow 14:00',slots:'18/32 slots' },
+  { id:'underground-circuit', round:'S3 · Round 05', name:'No data',           time:'Fri 20:00',     slots:'87/256 slots' },
 ];
 
 export const HOME_EVENTS: Event[] = [
-  { id:'winter-invitational', round:'S3 · Round 08', name:'Winter Invitational — Open Bracket', time:'128 competing',        slots:'', live:true },
-  { id:'pacific-regional',    round:'S3 · Round 07', name:'Pacific Regional Qualifier',          time:'Today 18:00 · 64 slots', slots:'' },
-  { id:'corps-classic',       round:'S3 · Round 06', name:'Corps Classic — All Stars',            time:'Tomorrow 14:00 · 32 slots', slots:'' },
-  { id:'underground-circuit', round:'S3 · Round 05', name:'Underground Circuit Vol. 4',           time:'Fri 20:00 · 256 slots', slots:'' },
+  // { id:'winter-invitational', round:'S3 · Round 08', name:'No data',          time:'No data',        slots:'', live:true },
+  { id:'pacific-regional',    round:'S3 · Round 07', name:'No data',          time:'No data · 0 slots', slots:'' },
+  { id:'corps-classic',       round:'S3 · Round 06', name:'No data',            time:'No data · 0 slots', slots:'' },
+  { id:'underground-circuit', round:'S3 · Round 05', name:'No data',           time:'No data ·  0 slots', slots:'' },
 ];
 
 export const FEATURES: Feature[] = [
@@ -91,7 +91,7 @@ export const ROSTER_STATS: Stat[] = [
   { count:12,   label:'Seasons complete' },
 ];
 
-export const MARQUEE_ITEMS_HOME = ['Compete','Win','Rise','Corps Arena','Season 3','Enter the Arena','Built for competition','Open bracket','Global roster'];
+export const MARQUEE_ITEMS_HOME = ['Compete','Win','Rise','Corps Arena','Season 1','Enter the Arena','Built for competition','Open bracket','Global roster'];
 export const MARQUEE_ITEMS_ABOUT = ['Compete','Integrity','Discipline','Corps Arena','Built for winners','No excuses','Global competition'];
 
 export const VALUES = [

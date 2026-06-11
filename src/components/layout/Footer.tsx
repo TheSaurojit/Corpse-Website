@@ -86,11 +86,11 @@ export default function Footer() {
             zIndex: 2,
           }}
         >
-          ARENA
+          {/* ARENA
           <br />
           STARTS
           <br />
-          <span style={{ color: "var(--red)" }}>TONIGHT.</span>
+          <span style={{ color: "var(--red)" }}>TONIGHT.</span> */}
         </h2>
 
         {/* Middle row: 3 columns — description | store badges | shard info */}
@@ -120,15 +120,14 @@ export default function Footer() {
               <strong style={{ color: "var(--white)", fontWeight: 600 }}>
                 Download the app.
               </strong>{" "}
-              Pick a mode. Drop in. Squads queue across BGMI, CODM and Free Fire
-              – campus brackets every Sunday, payouts settled by morning.
+              Love gaming? Join Corpse Arena and play tournaments with real cash prizes. Download the app, register your squad, and start winning today.
             </p>
           </div>
 
           {/* Centre: store badges */}
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "flex-end" }}>
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=com.corpsearena.app&pcampaignid=web_share"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -147,6 +146,7 @@ export default function Footer() {
               onMouseLeave={(e) =>
                 (e.currentTarget.style.borderColor = "var(--g200)")
               }
+              target="_blank"
             >
               <span style={{ fontSize: "20px", lineHeight: 1 }}>▶</span>
               <span style={{ display: "flex", flexDirection: "column" }}>
@@ -233,8 +233,8 @@ export default function Footer() {
                 marginBottom: "6px",
               }}
             >
-              Shard 0001 –{" "}
-              <span style={{ color: "var(--red)" }}>Mumbai.</span>
+              ASSAM –{" "}
+              <span style={{ color: "var(--red)" }}>INDIA.</span>
             </div>
             <div
               style={{
@@ -246,9 +246,8 @@ export default function Footer() {
                 lineHeight: 1.8,
               }}
             >
-              OPERATED BY CORPSE_LTD
+              OPERATED BY CORPSE ESPORTS PRIVATE LIMITED
               <br />
-              POWERED BY CORPSE CAMPUS ARENA
             </div>
           </div>
         </div>

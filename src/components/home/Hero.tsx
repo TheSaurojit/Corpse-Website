@@ -170,7 +170,7 @@ export default function Hero() {
                   flexShrink: 0,
                 }}
               />
-              Season 3 · Now open
+              season 1· Now open
             </div>
 
             {/* Title */}
@@ -290,20 +290,20 @@ export default function Hero() {
                     }}
                   >
                     {[
-                      { label: "REGN.", status: "OPEN", text: "CODM CUP R02" },
-                      { label: "REGN.", status: "CLOSING", text: "FF WEEKLY" },
+                      { label: "REGN.", status: "OPEN", text: "" },
+                      { label: "REGN.", status: "CLOSING", text: "" },
                       {
                         label: "LIVE",
                         status: "NOW",
-                        text: "BGMI INVITATIONAL",
+                        text: "",
                       },
                       {
                         label: "REGN.",
                         status: "OPEN",
-                        text: "VALORANT CLASH",
+                        text: "",
                       },
-                      { label: "REGN.", status: "OPEN", text: "CODM CUP R02" },
-                      { label: "REGN.", status: "CLOSING", text: "FF WEEKLY" },
+                      { label: "REGN.", status: "OPEN", text: "" },
+                      { label: "REGN.", status: "CLOSING", text: "" },
                     ].map((item, i) => (
                       <div
                         key={i}
@@ -368,7 +368,7 @@ export default function Hero() {
                     lineHeight: 1,
                   }}
                 >
-                  412{" "}
+                  0{" "}
                   <small
                     style={{
                       fontSize: "11px",
@@ -378,7 +378,7 @@ export default function Hero() {
                       fontWeight: 400,
                     }}
                   >
-                    / 480
+                    / 0
                   </small>
                 </span>
               </div>
@@ -406,7 +406,7 @@ export default function Hero() {
                     lineHeight: 1,
                   }}
                 >
-                  ₹ 18.4L
+                  ₹ 0.00
                 </span>
               </div>
               <div
@@ -433,7 +433,7 @@ export default function Hero() {
                     lineHeight: 1,
                   }}
                 >
-                  22,839
+                  0
                 </span>
               </div>
             </div>

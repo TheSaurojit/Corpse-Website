@@ -35,7 +35,7 @@ export default function RegisterPanel({ initialTitle = 'Register for Winter Invi
     <div id="reg-panel" className="reveal delay-2" style={{ background: 'var(--g100)', border: '1px solid var(--g200)', padding: '40px' }}>
       <div style={{ fontFamily: 'var(--font-brand)', fontSize: '28px', color: 'var(--white)', marginBottom: '8px', fontWeight: 400 }} id="reg-title">{title}</div>
       <p style={{ fontFamily: 'var(--font-ui)', fontSize: '14px', color: 'var(--g400)', lineHeight: 1.6, marginBottom: '28px' }}>
-        Season 3 · Round 08 · Open bracket · 128 slots
+        season 1· Round 08 · Open bracket · 128 slots
       </p>
 
       {!success ? (

@@ -20,7 +20,7 @@ export default function HomePage() {
       <Marquee items={MARQUEE_ITEMS_HOME} />
       <FeaturedArenas />
       <HomeManifesto />
-      <TopLadderPreview />
+      {/* <TopLadderPreview /> */}
       <EventsPreview />
       <ArenaPillars />
       <Footer />

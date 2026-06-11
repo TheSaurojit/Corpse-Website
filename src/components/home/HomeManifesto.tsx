@@ -61,7 +61,7 @@ export default function HomeManifesto() {
               lineHeight: 1.5,
               whiteSpace: 'nowrap'
             }}>
-              EST. 2024 · MUMBAI
+              EST. 2026 · ASSAM
             </div>
           )}
         </div>
@@ -79,14 +79,14 @@ export default function HomeManifesto() {
           <div style={{ padding: isMobile ? '0' : '0 24px', borderLeft: isMobile ? 'none' : 'none' }}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '10.5px', color: 'var(--g400)', letterSpacing: '-0.02em', textTransform: 'uppercase' }}>Built for</div>
             <div style={{ fontFamily: 'var(--font-display)', fontWeight: 500, fontSize: '17px', letterSpacing: '-0.02em', color: 'var(--white)', marginTop: '6px', lineHeight: 1.25 }}>
-              India&apos;s mobile esports.<br/>Android-first, 390 px up.
+              India&apos;s mobile esports.<br/>For Android and IOS.
             </div>
           </div>
 
           <div style={{ padding: isMobile ? '0' : '0 24px', borderLeft: isMobile ? 'none' : '1px solid var(--g200)' }}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '10.5px', color: 'var(--g400)', letterSpacing: '-0.02em', textTransform: 'uppercase' }}>Operated by</div>
             <div style={{ fontFamily: 'var(--font-display)', fontWeight: 500, fontSize: '17px', letterSpacing: '-0.02em', color: 'var(--white)', marginTop: '6px', lineHeight: 1.25 }}>
-              Corpse.ltd<br/>w/ Corpse Campus partners
+              Corpse Esports <br /> Private Limited<br/>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ export default function HomeManifesto() {
           <div style={{ padding: isMobile ? '0' : '0 24px', borderLeft: isMobile ? 'none' : '1px solid var(--g200)' }}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '10.5px', color: 'var(--g400)', letterSpacing: '-0.02em', textTransform: 'uppercase' }}>House rules</div>
             <div style={{ fontFamily: 'var(--font-display)', fontWeight: 500, fontSize: '17px', letterSpacing: '-0.02em', color: 'var(--white)', marginTop: '6px', lineHeight: 1.25 }}>
-              Anti-cheat live.<br/>Veterans verified.
+              Anti-cheat live.<br/>Organisation verified.
             </div>
           </div>
 
@@ -111,7 +111,7 @@ export default function HomeManifesto() {
             letterSpacing: '-0.02em', textTransform: 'uppercase',
             marginTop: '32px', textAlign: 'center'
           }}>
-            EST. 2024 · MUMBAI
+            EST. 2026 · ASSAM
           </div>
         )}
       </div>

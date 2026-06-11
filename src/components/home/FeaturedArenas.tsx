@@ -173,7 +173,7 @@ export default function FeaturedArenas() {
   return (
     <section style={{ padding: `96px ${px}`, borderBottom: '1px solid #2B2A2A', background: 'var(--black)' }}>
       {/* Section header */}
-      <div style={{
+      {/* <div style={{
         display: 'grid',
         gridTemplateColumns: isMobile ? '1fr' : 'auto 1fr auto',
         alignItems: 'end',
@@ -182,12 +182,10 @@ export default function FeaturedArenas() {
         borderBottom: '1px solid #2B2A2A',
         marginBottom: '0',
       }}>
-        {/* Index */}
         <span style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: '11px', color: '#7E7E7E', letterSpacing: '-0.02em', textTransform: 'uppercase', alignSelf: 'start' }}>
           <b style={{ color: '#FF0000', fontWeight: 400 }}>// 01</b><br />Arenas
         </span>
 
-        {/* Heading */}
         <h2 style={{ margin: 0, fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(40px, 7vw, 100px)', lineHeight: 0.92, letterSpacing: '-0.04em', textTransform: 'uppercase', color: '#fff' }}>
           Featured arenas,{' '}
           <em style={{ fontStyle: 'normal', fontFamily: 'var(--font-sub)', fontWeight: 300, color: '#7E7E7E', letterSpacing: '-0.02em', textTransform: 'none' }}>
@@ -195,7 +193,6 @@ export default function FeaturedArenas() {
           </em>
         </h2>
 
-        {/* Aside */}
         {!isMobile && (
           <span style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: '11px', color: '#7E7E7E', letterSpacing: '-0.02em', textTransform: 'uppercase', textAlign: 'right' }}>
             Updated <b style={{ color: '#fff', fontWeight: 500 }}>{timeStr}</b><br />
@@ -205,10 +202,10 @@ export default function FeaturedArenas() {
             </button>
           </span>
         )}
-      </div>
+      </div> */}
 
       {/* Arena cards */}
-      <div style={{
+      {/* <div style={{
         display: 'grid',
         gridTemplateColumns: isMobile ? '1fr' : isTablet ? '1fr 1fr' : 'repeat(3, 1fr)',
         borderTop: '1px solid #2B2A2A',
@@ -222,7 +219,7 @@ export default function FeaturedArenas() {
             <ArenaCard arena={arena} />
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
