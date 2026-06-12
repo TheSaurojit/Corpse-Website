@@ -259,7 +259,9 @@ export default function Footer() {
           borderTop: "1px solid var(--g200)",
           padding: `60px ${px}`,
           display: "grid",
-          gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fit, minmax(180px, 1fr))",
+          gridTemplateColumns: isMobile
+  ? "repeat(2, minmax(0, 1fr))"
+  : "repeat(auto-fit, minmax(180px, 1fr))",
           gap: "40px",
         }}
       >
@@ -398,7 +400,7 @@ export default function Footer() {
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
           justifyContent: "space-between",
-          alignItems: isMobile ? "flex-start" : "center",
+          alignItems: isMobile ? "center" : "center",
           gap: "16px",
         }}
       >
@@ -425,7 +427,7 @@ export default function Footer() {
             textTransform: "uppercase",
           }}
         >
-          V2.4.1 · BUILD 0481
+         v1.0.1  · BUILD 0481
         </span>
       </div>
 

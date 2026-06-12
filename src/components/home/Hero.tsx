@@ -130,7 +130,7 @@ export default function Hero() {
           flex: 1,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "flex-end",
+          justifyContent: isMobile ? "center" : "flex-end",
         }}
       >
         {/* Content Grid */}

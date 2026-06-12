@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ui/ScrollReveal';
 import Navbar from '@/components/layout/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Corps Arena — Built for the Arena',
+  title: 'Corpse Arena — Built for the Arena',
   description: 'The competitive platform for elite performers. Qualify. Compete. Rise.',
 };
 

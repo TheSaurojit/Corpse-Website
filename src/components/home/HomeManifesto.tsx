@@ -14,6 +14,7 @@ export default function HomeManifesto() {
         {/* Quote Grid */}
         <div style={{ 
           display: 'grid', 
+          marginTop: "-200px",
           gridTemplateColumns: isMobile ? '1fr' : isTablet ? 'auto 1fr' : 'auto 1fr auto', 
           gap: isMobile ? '24px' : '40px',
           alignItems: 'start'

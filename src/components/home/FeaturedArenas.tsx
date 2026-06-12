@@ -171,7 +171,7 @@ export default function FeaturedArenas() {
   }, []);
 
   return (
-    <section style={{ padding: `96px ${px}`, borderBottom: '1px solid #2B2A2A', background: 'var(--black)' }}>
+    <section style={{ padding: `96px ${px}`, background: 'var(--black)' }}>
       {/* Section header */}
       {/* <div style={{
         display: 'grid',
